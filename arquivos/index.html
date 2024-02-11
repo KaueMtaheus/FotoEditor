@@ -13,7 +13,7 @@
     <main>
         <header>
             <div>
-                <button id="bntResetFilters">Limpar Filtros</button>
+                <button id="bntResetFilters">Limpar Filtro</button>
             </div>
             <div>
                 <button id="newImg">Nova Imagem</button>
@@ -21,19 +21,19 @@
             </div> 
         </header>
         <div class="img-content">
-            <input type="file" name="image/*" id="display: none;">
-            <img src="img/default.png" alt="" />
+            <input type="file" name="image */" style="display: none;">
+            <img src="img/default.png">
         </div>
         <footer>
             <div class="rotate-content">
-                <button onclick="handDirection('rotateRight')"><i class="fa-solid fa-rotate-right"></i></button>
                 <button onclick="handDirection('rotateLeft')"><i class="fa-solid fa-rotate-left"></i></button>
+                <button onclick="handDirection('rotateRight')"><i class="fa-solid fa-rotate-right"></i></button>
                 <button onclick="handDirection('reflectY')"><i class="fa-solid fa-arrows-up-down"></i></button>
                 <button onclick="handDirection('reflectX')"><i class="fa-solid fa-arrows-left-right"></i></button>
             </div>
             <span id="spnRangevalue"></span>
             <input type="range" style="width: 80%;" />
-            <div id="filters-content">
+            <div class="filters-content">
                 <button id="filterDefault" class="active">Brilho</button>
                 <button>Constraste</button>
                 <button>Saturação</button>
